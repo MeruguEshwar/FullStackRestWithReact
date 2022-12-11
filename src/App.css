@@ -1,38 +1,277 @@
-.App {
+#headerBackground {
+  background: rgb(212, 187, 187);
+  background: linear-gradient(90deg, rgba(212, 187, 187, 1) 0%, rgba(186, 186, 186, 0.7399334733893557) 46%, rgba(164, 162, 162, 1) 100%);
+}
+
+.content {
+  height: 300px;
+  background-color: black;
+}
+
+#carosialimg {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s all ease-in-out;
+}
+
+
+#carosialimg:hover {
+  /* opacity: 0.7; */
+  box-shadow: 0 12px 16px 0 rgba(255, 201, 201, 0.24), 0 17px 50px 0 rgba(252, 217, 217, 0.19);
+  size: 22px;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+}
+
+#card2 {
+  height: 26rem;
+  border: none;
+}
+
+#card2:hover {
+  border: 1px solid rgb(150, 147, 147);
+}
+
+#cardimageheight {
+  height: 200px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Footer css */
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
   text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.facebook-bg {
+  background: #3B5998;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.twitter-bg {
+  background: #55ACEE;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.google-bg {
+  background: #DD4B39;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+#Bodynav{
+  background-color: #F8F8F8;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+
+#logincard{
+  background: rgb(212, 187, 187);
+  background: linear-gradient(90deg, rgba(212, 187, 187, 1) 0%, rgba(186, 186, 186, 0.7399334733893557) 46%, rgba(164, 162, 162, 1) 100%);
+  border:1px solid #8db0fc;
+
+}
+
+
+/* .loginPage{
+  background: rgb(212, 187, 187);
+  background: linear-gradient(90deg, rgba(212, 187, 187, 1) 0%, rgba(186, 186, 186, 0.7399334733893557) 46%, rgba(164, 162, 162, 1) 100%);
+  height: 900px;
+} */
+
+.contents{
+  width: 330px; 
+  border-radius: 10px;
+  padding: 40px 30px;
+  margin-top: 100px;
+  box-shadow: -3px -3px 9px #aaa9a9a2,
+              3px 3px 7px rgba(147, 149, 151, 0.671);
+ 
+}
+
+
+/* 
+New One */
+#gridbuttons{
+  margin-left: -35px;
+
 }
